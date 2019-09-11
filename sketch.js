@@ -1,15 +1,19 @@
+var veryHungry = false;
 
 function setup() {
 
   // Change these to change the title and author of the story
   document.getElementById('title').innerHTML="Goldilocks & the Three Bears"; // title
+
   document.getElementById('author').innerHTML="Jon Stapleton"; // author
 
 
   
   // All of your code goes under here
-  var veryHungry = false;
+  
+
   var story = 'Goldilocks has been lost in the woods for ' + many() + ' hours. Eventually she discovers a house, and smells something delicious. ' + delicious(); // Create the text
+
   printToPage(story); // Print the text to the webpage
 }
 
@@ -18,11 +22,9 @@ function setup() {
 // Put your functions below here:
 
 function many() {
-  let hours = Math.floor(random(1, 6));
+  let hours = Math.floor(random(1, 6)); // Random number rounded down
   if(hours > 3) {
     veryHungry = true;
-  } else {
-    veryHungry = false;
   }
   return hours
 }
