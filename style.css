@@ -1,0 +1,84 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+body {
+	background: #FFF;
+	color: #111;
+	font: 24px Baskerville, "Palatino Linotype", "Times New Roman", Times, serif;
+}
+
+#text {
+  text-align: center;
+}
+	
+div, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+#story { 
+	margin: auto;
+	padding: 20px 0;
+	text-align: left;
+	width: 390px;
+}
+
+#bottom-bracket {
+  display: block;
+  margin-left: auto;
+  /* transform: scaleY(-1); */
+  transform: scale(-1, -1);
+}
+
+h1, h2 {
+	font-weight: normal;
+	text-align: center;
+}
+
+h1 {
+	font-size: 48px;
+	line-height: 1.2;
+	margin-bottom: 10px;
+}
+
+h2 {
+	color: #666;
+	font-size: 32px;
+	font-style: italic;
+	margin-bottom: 30px;
+}
+
+p {
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+h2:before {
+	content: '— ';
+}
+			
+h2:after {
+	content: ' —';
+}
+
+#story h2 + p:first-letter {
+	float: left;
+	font-size: 42px;
+	line-height: 1;
+	margin: 2px 5px 0 0;
+}
+  
+#story p:first-line {
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+#story p:last-child {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
