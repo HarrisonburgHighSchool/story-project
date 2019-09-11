@@ -46,6 +46,7 @@ function inspects() {
 }
 
 
+//Don't delete this!
 function printToPage(story) {
   var para = document.createElement("P");
   var t = document.createTextNode(story);
